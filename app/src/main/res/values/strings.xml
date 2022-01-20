@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Basics of XML markup</string>
+    <string name="hi_world">Hi, World!</string>
 </resources>
