@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:columnCount="6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:padding="5dp"
+        android:background="#ff00ff"
+        android:text="111"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#5500ff"
+        android:text="222"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#ff0055"
+        android:text="333"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#ff77ff"
+        android:text="444"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#0000ff"
+        android:text="555"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#99ff00"
+        android:text="666"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#00aaff"
+        android:text="777"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#ffaaff"
+        android:text="888"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#aa0066"
+        android:text="999"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#00aaff"
+        android:text="000"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#ff11ff"
+        android:text="112"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#22ffff"
+        android:text="113"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#66ee00"
+        android:text="114"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#00ff00"
+        android:text="115"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#00aa33"
+        android:text="116"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#3300aa"
+        android:text="117"/>
+
+    <TextView
+        android:padding="5dp"
+        android:background="#aaaa00"
+        android:text="118"/>
+
+</GridLayout>
