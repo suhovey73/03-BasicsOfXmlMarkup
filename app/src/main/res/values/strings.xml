@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">Basics of XML markup</string>
     <string name="center">CENTER</string>
-    <string name="topstart">TopStart</string>
-    <string name="topcenter">TopCenter</string>
-    <string name="topend">TopEnd</string>
-    <string name="censtart">CenStart</string>
-    <string name="cenend">CenEnd</string>
+    <string name="topstart">TopStartParent</string>
+    <string name="topcenter">Between 2 views</string>
+    <string name="topend">TopEndParent</string>
+    <string name="censtart">TopStart</string>
+    <string name="cenend">TopEnd</string>
     <string name="botstart">BotStart</string>
-    <string name="botcenter">BotCenter</string>
+    <string name="botcenter">Centered between\n4 views</string>
     <string name="textview">TextView</string>
+    <string name="botend">BotEnd</string>
+    <string name="botstartparent">BotStartParent</string>
+    <string name="botendparent">BotEndParent</string>
 </resources>
