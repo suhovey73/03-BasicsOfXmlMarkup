@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Basics of XML markup</string>
+    <string name="center">CENTER</string>
+    <string name="topstart">TopStart</string>
+    <string name="topend">TopEnd</string>
+    <string name="btmstart">BtmStart</string>
+    <string name="btmend">BtmEnd</string>
+    <string name="topstartparent">TopStartPar</string>
+    <string name="topendpar">TopEndPar</string>
+    <string name="topbetpar">Between\n2 views</string>
+    <string name="btmstartpar">BtmStartPar</string>
+    <string name="btmendpar">BtmEndPar</string>
+    <string name="centered_between_n4_views">Centered between\n4 views</string>
 </resources>

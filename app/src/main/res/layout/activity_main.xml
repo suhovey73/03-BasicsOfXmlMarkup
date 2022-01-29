@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/viewTop"
+        android:layout_width="12dp"
+        android:layout_height="100dp"
+        android:background="#7fff00ff"
+        app:layout_constraintStart_toStartOf="@id/btnCenter"
+        app:layout_constraintEnd_toEndOf="@id/btnCenter"
+        app:layout_constraintBottom_toTopOf="@id/btnCenter"/>
+
+    <View
+        android:id="@+id/viewBottom"
+        android:layout_width="12dp"
+        android:layout_height="100dp"
+        android:background="#7fff5500"
+        app:layout_constraintStart_toStartOf="@id/btnCenter"
+        app:layout_constraintEnd_toEndOf="@id/btnCenter"
+        app:layout_constraintTop_toBottomOf="@id/btnCenter"/>
+
+    <View
+        android:id="@+id/viewStart"
+        android:layout_width="100dp"
+        android:layout_height="12dp"
+        android:background="#7f0000ff"
+        app:layout_constraintEnd_toStartOf="@id/btnCenter"
+        app:layout_constraintTop_toTopOf="@id/btnCenter"
+        app:layout_constraintBottom_toBottomOf="@id/btnCenter"
+        android:layout_marginEnd="5dp"/>
+
+    <View
+        android:id="@+id/viewEnd"
+        android:layout_width="100dp"
+        android:layout_height="12dp"
+        android:background="#7f005Fff"
+        app:layout_constraintStart_toEndOf="@id/btnCenter"
+        app:layout_constraintTop_toTopOf="@id/btnCenter"
+        app:layout_constraintBottom_toBottomOf="@id/btnCenter"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:id="@+id/topStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/topstart"
+        android:background="#FF7F00"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/viewStart"
+        app:layout_constraintTop_toTopOf="@id/viewTop"/>
+
+    <TextView
+        android:id="@+id/topEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/topend"
+        android:padding="4dp"
+        android:background="#ff7f00"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/viewEnd"
+        app:layout_constraintTop_toTopOf="@id/viewTop"/>
+
+    <TextView
+        android:id="@+id/btmStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btmstart"
+        android:padding="4dp"
+        android:background="#FF7F00"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/viewStart"
+        app:layout_constraintBottom_toBottomOf="@id/viewBottom"/>
+
+    <TextView
+        android:id="@+id/btmEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btmend"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#FF7F00"
+        app:layout_constraintEnd_toEndOf="@id/viewEnd"
+        app:layout_constraintBottom_toBottomOf="@id/viewBottom"/>
+
+    <TextView
+        android:id="@+id/topStartParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/topstartparent"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#7FFF00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/topEndParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/topendpar"
+        android:background="#7FFF00"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/topBetweenParent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/topbetpar"
+        android:padding="4dp"
+        android:background="#FF7F7F"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/topStartParent"
+        app:layout_constraintStart_toEndOf="@id/topStartParent"
+        app:layout_constraintEnd_toStartOf="@id/topEndParent"/>
+
+    <TextView
+        android:id="@+id/btmStartParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btmstartpar"
+        android:background="#7FFF00"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/btmEndParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btmendpar"
+        android:background="#7FFF00"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/centered_between_n4_views"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="#FF7F7F"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btmStart"
+        app:layout_constraintBottom_toTopOf="@+id/btmStartParent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
