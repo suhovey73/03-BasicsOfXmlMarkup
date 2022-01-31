@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".percentage">
+
+    <TextView
+        android:id="@+id/view100"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Width 100%"
+        android:background="#E48279"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/view75"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Width 75%"
+        android:background="#8DE479"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        app:layout_constraintWidth_percent="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view100"/>
+
+    <TextView
+        android:id="@+id/view50"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Width 50%"
+        android:background="#79CBE4"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view75"/>
+
+    <TextView
+        android:id="@+id/view50_bias"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Width 50% + bias 25%"
+        android:background="#798BE4"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="4dp"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="0.25"
+        android:layout_marginTop="5dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view50"/>
+
+    <View
+        android:id="@+id/pointStart"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@color/black"
+        android:layout_marginStart="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view50_bias"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/pointEnd"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@color/black"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view50_bias"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Space
+        android:id="@+id/spaceStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/pointStart"
+        app:layout_constraintEnd_toStartOf="@+id/pointEnd"
+        app:layout_constraintTop_toBottomOf="@+id/view50_bias"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Space
+        android:id="@+id/spaceEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/pointStart"
+        app:layout_constraintEnd_toStartOf="@+id/pointEnd"
+        app:layout_constraintTop_toBottomOf="@+id/view50_bias"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/view80Between2Points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2742CF"
+        android:text="TextView 80% between\n2 points"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/spaceStart"
+        app:layout_constraintEnd_toEndOf="@+id/spaceEnd"
+        app:layout_constraintTop_toBottomOf="@id/view50_bias"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="DimensionRating 40% on width\nand between 2 points"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="#B6B6B6"
+        app:layout_constraintDimensionRatio="H,0.4"
+        app:layout_constraintStart_toStartOf="@id/pointStart"
+        app:layout_constraintEnd_toEndOf="@id/pointEnd"
+        app:layout_constraintTop_toBottomOf="@+id/view80Between2Points"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="DimensionRating\n140% on height\nand between 2 views"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="#B6B6B6"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintDimensionRatio="W,1.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view50_bias"
+        app:layout_constraintBottom_toTopOf="@id/view80Between2Points"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
