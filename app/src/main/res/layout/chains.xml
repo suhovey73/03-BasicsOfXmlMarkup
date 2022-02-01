@@ -194,6 +194,7 @@
         android:background="#777777"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintTop_toBottomOf="@id/dividerTop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/space2"/>
 
@@ -203,6 +204,7 @@
         android:layout_height="0dp"
         android:background="#777777"
         app:layout_constraintTop_toBottomOf="@id/dividerTop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/space1"
         app:layout_constraintEnd_toEndOf="parent"/>
 

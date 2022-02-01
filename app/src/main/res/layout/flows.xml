@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <!-- Flow chain packed -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flow chain packed"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="11111111"/>
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="2222222222"/>
+
+
+    <TextView
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="33333"/>
+
+
+    <TextView
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="444444444444"/>
+
+
+    <TextView
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="5555555"/>
+
+
+    <TextView
+        android:id="@+id/view6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="666"/>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginTop="15dp"
+        app:flow_verticalGap="5dp"
+        app:flow_horizontalGap="5dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_wrapMode="chain"
+        app:constraint_referenced_ids="view1,view2,view3,view4,view5,view6"/>
+
+
+    <!-- Flow chain spread -->
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flow chain spread"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/flow1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/view21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="11111111"/>
+
+    <TextView
+        android:id="@+id/view22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="2222222222"/>
+
+
+    <TextView
+        android:id="@+id/view23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="33333"/>
+
+
+    <TextView
+        android:id="@+id/view24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="44444444"/>
+
+
+    <TextView
+        android:id="@+id/view25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="555555"/>
+
+
+    <TextView
+        android:id="@+id/view26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="66666666666"/>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title2"
+        android:layout_marginTop="15dp"
+        app:flow_verticalGap="5dp"
+        app:flow_horizontalGap="5dp"
+        app:flow_wrapMode="chain"
+        app:flow_horizontalStyle="spread"
+        app:constraint_referenced_ids="view21,view22,view23,view24,view25,view26"/>
+
+    <!-- Flow chain spread inside -->
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flow chain spread inside"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/flow2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/view31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="11111111"/>
+
+    <TextView
+        android:id="@+id/view32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="2222222222"/>
+
+
+    <TextView
+        android:id="@+id/view33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="33333"/>
+
+
+    <TextView
+        android:id="@+id/view34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="44444444"/>
+
+
+    <TextView
+        android:id="@+id/view35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="555555"/>
+
+
+    <TextView
+        android:id="@+id/view36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="66666666666"/>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title3"
+        android:layout_marginTop="15dp"
+        app:flow_verticalGap="5dp"
+        app:flow_horizontalGap="5dp"
+        app:flow_wrapMode="chain"
+        app:flow_horizontalStyle="spread_inside"
+        app:constraint_referenced_ids="view31,view32,view33,view34,view35,view36"/>
+
+    <!-- Flow chain vertical spread inside -->
+
+    <TextView
+        android:id="@+id/title4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flow chain vertical spread inside"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/flow3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/view41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="11111111"/>
+
+    <TextView
+        android:id="@+id/view42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="2222222222"/>
+
+
+    <TextView
+        android:id="@+id/view43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="33333"/>
+
+
+    <TextView
+        android:id="@+id/view44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="44444444"/>
+
+
+    <TextView
+        android:id="@+id/view45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="555555"/>
+
+
+    <TextView
+        android:id="@+id/view46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_view_basic"
+        android:text="66666666666"/>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow4"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="15dp"
+        app:flow_verticalGap="5dp"
+        app:flow_horizontalGap="5dp"
+        app:flow_wrapMode="chain"
+        app:flow_verticalStyle="spread_inside"
+        app:constraint_referenced_ids="view41,view42,view43,view44,view45,view46"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
